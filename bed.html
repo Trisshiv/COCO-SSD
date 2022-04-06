@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+    <title>Object Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-position: center;
+            background-size: cover;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        #bed_status {
+            font-size: 17px;
+        }
+
+        canvas {
+            border: 10px solid black;
+            box-shadow: 5px 5px 5px yellow;
+        }
+
+        .dang {
+            background-color: black !important;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body background="b2.webp">
+    <center>
+        <h2>Object Detection From WhitehatJr</h2>
+
+        <h3 class="btn btn-danger" id="bed_status">Status</h3>
+        <h3 class="btn btn-dark dang">Back</h3>
+
+        <br>
+        <h3 class="btn btn-success" id="bed_ded">There are 6 big objects in the image from which cocossd model has
+            detected __ objects</h3>
+    </center>
+
+    <script src="bed.js"></script>
+</body>
+
+</html>
